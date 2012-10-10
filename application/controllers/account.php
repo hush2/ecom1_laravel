@@ -132,4 +132,13 @@ class Account_Controller extends Base_Controller
         return view('account.renew');
     }
 
+    public function post_renew()
+    {
+        if (User::renew())
+        {
+            return $this->get_logout();
+        }
+        return view('account.renew');
+    }
+
 }

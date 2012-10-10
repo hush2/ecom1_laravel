@@ -35,6 +35,12 @@ class User extends Eloquent
             return $new_password;
         }
     }
+    public static function renew()
+    {
+        $user = self::find(Auth::user()->id);
+        $user->date_expires = DB::Raw('ADDDATE(NOW(), INTERVAL 1 MONTH)');
+        return $user->save();
+    }
 
     public static function is_expired()
     {

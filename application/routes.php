@@ -15,7 +15,7 @@ Route::group(array('before' => 'auth'), function()
 {
     Route::get('logout', 'account@logout');
     Route::any('change_password', 'account@change_password');
-    Route::get('renew', 'account@renew');
+    Route::any('renew', 'account@renew');
     Route::get('history', 'account@history');
     Route::get('add_to_favorites/(:num)', 'content@add_to_favorites');
     Route::get('remove_from_favorites/(:num)', 'content@remove_from_favorites');
