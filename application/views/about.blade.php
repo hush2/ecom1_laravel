@@ -10,7 +10,7 @@
     <br />
     
     <p><em>Knowledge is Power</em> is the first example from the book {{ HTML::link('http://www.larryullman.com/books/effortless-e-commerce-with-php-and-mysql/', 'Effortless E-Commerce with PHP and MySQL') }}</a> by Larry Ullman</p>
-    <p>Original code by Larry Ullman. Laravel version by hush2.</p>
+    <p>Original code by Larry Ullman. Laravel 3.x version by hush2.</p>
 
     <h4>Credits</h4>
     <p>Common Attack tips from {{ HTML::link('http://www.cmswire.com/cms/web-cms/how-they-hack-your-website-overview-of-common-techniques-002339.php', 'CMSWire') }}</p>
